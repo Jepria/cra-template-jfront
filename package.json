@@ -1,0 +1,33 @@
+{
+  "name": "cra-template-jfront",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "tookit",
+    "redux tookit",
+    "typescript",
+    "jfront"
+  ],
+  "description": "Create React App template with Typescript, Redux & JFront.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jepria/cra-template-jfront.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/Jepria/cra-template-jfront/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
