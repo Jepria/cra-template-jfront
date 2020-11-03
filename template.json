@@ -54,9 +54,6 @@
       "deploy": "gh-pages -d build",
       "lint": "tsc --noEmit && eslint . --ext ts --ext tsx --ext js",
       "lint:fix": "tsc --noEmit && eslint --fix . --ext ts --ext tsx --ext js"
-    },
-    "eslintConfig": {
-      "extends": "react-app"
     }
   }
 }
