@@ -1,15 +1,9 @@
-import React, { useState, Suspense, useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import DetailPage from "./features/feature/pages/Detail";
-import CreatePage from "./features/feature/pages/Create";
-import SearchPage from "./features/feature/pages/Search";
-import ListPage from "./features/feature/pages/List";
-import EditPage from "./features/feature/pages/Edit";
-import { FeatureSearchTemplate } from "./features/feature/api/FeatureInterface";
+import MainPage from "./features/main/pages/Main";
 import AppTabPanel from "./features/tabpanel/AppTabPanel";
-import FeatureToolbar from "./features/feature/components/FeatureToolbar";
-import FeatureProcessToolbar from "./features/feature-process/components/FeatureProcessToolbar";
+import MainToolbar from "./features/main/components/MainToolbar";
 
 const Loader = () => (
   <div>
@@ -32,12 +26,8 @@ function Main() {
       <AppTabPanel />
       <Switch>
         <Route path="/" exact>
-          <FeatureToolbar />
-          <SearchPage />
-        </Route>
-        <Route path="/create" exact>
-          <FeatureToolbar />
-          <CreatePage />
+          <MainToolbar />
+          <MainPage />
         </Route>
       </Switch>
     </BrowserRouter>

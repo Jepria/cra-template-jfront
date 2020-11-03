@@ -6,19 +6,15 @@ interface WorkState {
 }
 
 export enum Workstates {
-  FeatureDetail,
-  FeatureEdit,
-  FeatureCreate,
-  FeatureSearch,
-  FeatureList,
-  FeatureProcessDetail,
-  FeatureProcessCreate,
-  FeatureProcessSearch,
-  FeatureProcessList,
+  Detail,
+  Edit,
+  Create,
+  Search,
+  List
 }
 
 const initialState: WorkState = {
-  state: null,
+  state: null
 };
 
 export const WorkstateSlice = createSlice({
@@ -27,8 +23,8 @@ export const WorkstateSlice = createSlice({
   reducers: {
     setState(state, action) {
       state.state = action.payload;
-    },
-  },
+    }
+  }
 });
 
 export const { setState } = WorkstateSlice.actions;
